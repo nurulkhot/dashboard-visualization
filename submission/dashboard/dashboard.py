@@ -8,7 +8,14 @@ sns.set(style='dark')
 st.title('Visualisasi Data Temperature dan Hujan di Stasiun Gucheng')
 st.image("https://upload.wikimedia.org/wikipedia/commons/6/6e/Location_of_Gucheng_within_Yunnan_%28China%29.png")
  
- 
+ import os
+
+# Dapatkan path file CSV secara dinamis
+csv_file_path = os.path.join(os.path.dirname(__file__), 'all_data.csv')
+
+# Membaca data
+temp_df = pd.read_csv(csv_file_path)
+
 with st.sidebar:
     # Menambahkan logo perusahaan
     st.image("https://cdn.icon-icons.com/icons2/2745/PNG/512/temperature_icon_175973.png")
@@ -21,8 +28,8 @@ col1, col2, col3 = st.columns([1, 1, 1])
  
 with col1:
     st.header("2014")
-    # Membaca data
-    temp_df = pd.read_csv("dashboard/all_data.csv")
+    # # Membaca data
+    # temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2014
     temp_2014 = temp_df[temp_df['year'] == 2014]
@@ -45,8 +52,8 @@ with col1:
     
 with col2:
     st.header("2015")
-    # Membaca data
-    temp_df = pd.read_csv("dashboard/all_data.csv")
+    # # Membaca data
+    # temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2015
     temp_2015 = temp_df[temp_df['year'] == 2015]
@@ -68,8 +75,8 @@ with col2:
  
 with col3:
     st.header("2016")
-    # Membaca data
-    temp_df = pd.read_csv("dashboard/all_data.csv")
+    # # Membaca data
+    # temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2016
     temp_2016 = temp_df[temp_df['year'] == 2016]
@@ -96,8 +103,8 @@ tab1, tab2, tab3 = st.tabs(["2014", "2015", "2016"])
  
 with tab1:
     st.header("2014")
-    # Membaca data
-    temp_df = pd.read_csv("dashboard/all_data.csv")
+    # # Membaca data
+    # temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2014
     temp_2014 = temp_df[temp_df['year'] == 2014]
@@ -119,8 +126,8 @@ with tab1:
  
 with tab2:
     st.header("2015")
-    # Membaca data
-    temp_df = pd.read_csv("dashboard/all_data.csv")
+    # # Membaca data
+    # temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2014
     temp_2015 = temp_df[temp_df['year'] == 2015]
@@ -142,8 +149,8 @@ with tab2:
  
 with tab3:
     st.header("2016")
-    # Membaca data
-    temp_df = pd.read_csv("dashboard/all_data.csv")
+    # # Membaca data
+    # temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2016
     temp_2016 = temp_df[temp_df['year'] == 2016]
