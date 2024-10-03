@@ -3,12 +3,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
+import os
 
 sns.set(style='dark')
 st.title('Visualisasi Data Temperature dan Hujan di Stasiun Gucheng')
 st.image("https://upload.wikimedia.org/wikipedia/commons/6/6e/Location_of_Gucheng_within_Yunnan_%28China%29.png")
- 
- import os
 
 # Dapatkan path file CSV secara dinamis
 csv_file_path = os.path.join(os.path.dirname(__file__), 'all_data.csv')
