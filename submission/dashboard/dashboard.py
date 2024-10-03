@@ -22,7 +22,7 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.header("2014")
     # Membaca data
-    temp_df = pd.read_csv("dashboard\all_data.csv")
+    temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2014
     temp_2014 = temp_df[temp_df['year'] == 2014]
@@ -46,7 +46,7 @@ with col1:
 with col2:
     st.header("2015")
     # Membaca data
-    temp_df = pd.read_csv("dashboard\all_data.csv")
+    temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2015
     temp_2015 = temp_df[temp_df['year'] == 2015]
@@ -69,7 +69,7 @@ with col2:
 with col3:
     st.header("2016")
     # Membaca data
-    temp_df = pd.read_csv("dashboard\all_data.csv")
+    temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2016
     temp_2016 = temp_df[temp_df['year'] == 2016]
@@ -97,7 +97,7 @@ tab1, tab2, tab3 = st.tabs(["2014", "2015", "2016"])
 with tab1:
     st.header("2014")
     # Membaca data
-    temp_df = pd.read_csv("dashboard\all_data.csv")
+    temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2014
     temp_2014 = temp_df[temp_df['year'] == 2014]
@@ -120,7 +120,7 @@ with tab1:
 with tab2:
     st.header("2015")
     # Membaca data
-    temp_df = pd.read_csv("dashboard\all_data.csv")
+    temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2014
     temp_2015 = temp_df[temp_df['year'] == 2015]
@@ -143,7 +143,7 @@ with tab2:
 with tab3:
     st.header("2016")
     # Membaca data
-    temp_df = pd.read_csv("dashboard\all_data.csv")
+    temp_df = pd.read_csv("dashboard/all_data.csv")
 
     # Filter data untuk tahun 2016
     temp_2016 = temp_df[temp_df['year'] == 2016]
